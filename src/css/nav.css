@@ -1,0 +1,52 @@
+
+
+nav .level>li {
+    background: rgb(252, 251, 250);
+    padding: 10px 10px;
+    font-size: 16px;
+    transition: .4s;
+    margin: 0 5px;
+}
+
+nav .level>li a {
+    color: black;
+    position: relative;
+}
+
+nav .level>li:hover {
+    background: rgb(210, 210, 210);
+}
+
+/* 设置鼠标滑过后的样式 */
+
+nav .two {
+    background-color: rgb(210, 210, 210);
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 6;
+    text-align: center;
+}
+
+/* 先使二级菜单的内容隐藏 */
+nav .level>li:hover .two {
+    display: block;
+}
+
+/* 鼠标滑过一级菜单后的显示二级菜单 */
+nav .two li {
+    font-size: 14px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+}
+
+nav .two li:hover {
+    background: #aa895c;
+    color: whitesmoke;
+}
+
+.level span {
+    margin-left: 5px;
+}

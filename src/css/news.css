@@ -1,0 +1,142 @@
+html,body{
+    height:100%
+}
+main{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+aside{
+    flex-basis: 200px;
+    height: 100%;
+    background-color: #27ada0;
+}
+article{
+    height: 100%;
+    flex: 1;
+    position: relative;
+}
+
+aside * {
+    padding: 0;
+    margin: 0;
+}
+html body{
+    padding: 0;
+    margin: 0;
+}
+aside p{
+    margin: 10px 20px;
+    font-size: large;
+    text-align: center;
+}
+aside p span{
+    margin-left: 10px;
+}
+/* 对导航的内容设置一个主体为800px的宽并使其居中 */
+.clear {
+    clear: both;
+}
+
+/* 清除浮动 */
+a {
+    text-decoration-line: none;
+}
+
+/* 去掉默认a标签的下划线 */
+aside li {
+    list-style: none;
+}
+
+nav .level>li {
+    /* float: left; */
+    text-align: center;
+    background: #27ada0;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: .4s;
+}
+
+nav .level>li a {
+    color: black;
+}
+
+nav .level>li:hover {
+    background: #009688;
+    color: whitesmoke;
+}
+nav .level>li:hover span{
+    color: whitesmoke;
+}
+nav .level>li:hover .fa{
+    color: whitesmoke;
+}
+/* 设置鼠标滑过后的样式 */
+
+nav .two {
+    display: none;
+    margin-top: 10px;
+}
+
+/* 先使二级菜单的内容隐藏 */
+nav .level>li:hover .two {
+    display: block;
+}
+
+/* 鼠标滑过一级菜单后的显示二级菜单 */
+nav .two li {
+    padding: 5px 0;
+    transition: .4s;
+    cursor: pointer;
+}
+
+nav .two li:hover {
+    background: pink;
+}
+
+.level span {
+    margin-left: 5px;
+}
+.title{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: large;
+    color: blue;
+    font-weight: bold;
+}
+.content{
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: lightgoldenrodyellow;
+}
+.content.show{
+    z-index: 3;
+}
+.content li{
+    padding: 10px 0;
+    position: relative;
+}
+.content span{
+    font-size: small;
+    color: gray;
+    position: absolute;
+    right: 100px;
+}
+
+@media (max-width:800px){
+    main{
+      flex-direction: column;
+    }
+    .content span{
+        font-size: small;
+        color: gray;
+        position: relative;
+        right: 0;
+        left:10px
+    }
+}

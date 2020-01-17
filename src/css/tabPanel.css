@@ -1,0 +1,128 @@
+.tab-head-space{
+    width:30%;
+    margin:0 auto
+}
+.tab-head-text {
+    color: black;
+    position: relative;
+    margin: 18px 0 0 0;
+    font: 63px 仿宋;
+}
+.tab-head-text span {
+    color: black;
+    padding-bottom: 11px;
+    margin-left: 34px;
+    position: absolute;
+    top: 31px;
+    font: 22px 仿宋;
+    border-bottom: 1px solid rgb(19, 20, 70);
+}
+.tab-head-space .pros {
+    color: rgb(144, 144, 144);
+    letter-spacing: 2px;
+    font: 16px 仿宋;
+    padding: 15px 0px 0px 10px;
+    margin:0;
+}
+
+.sidebar .product{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.sidebar .product a{
+    background: #ebebeb;
+    padding: 10px;
+    font-size: x-large;
+}
+.sidebar .product a:nth-child(n+2){
+    margin-left: 15px;
+}
+.sidebar .product a:hover{
+    background: #aa895c;
+    color:#ffffff
+}
+.tab-content{
+    width:80%;
+    margin:30px auto;
+    height: 500px;
+}
+.product-detail{
+    height: 0;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+}
+.product-detail.visible{
+    width:100%;
+    margin:0 auto;
+    height: 500px;
+    visibility: visible;
+}
+.detail{
+    margin-left: 10px;
+}
+.detail p:nth-child(1){
+    font-size: 24px;
+    color: #f7a30c;
+    margin: 30px 0px;
+}
+.detail p:nth-child(2){
+    font-size: 18px;
+    color: #535353;
+    letter-spacing: 4px;
+    line-height: 31px;
+    min-height: 271px;
+}
+.product-detail a{
+    background: #595959;
+    display: block;
+    height: 40px;
+    width: 124px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-radius: 10px;
+}
+@media (max-width:1250px){
+    .tab-content {
+        width: 100%;
+        height: initial;
+    }
+    .product-detail{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .product-detail img{
+        height: 500px;
+    }
+    .product-detail.visible{
+        height:initial
+    }
+    .detail p:nth-child(2) {
+        letter-spacing: initial;
+    line-height: initial;
+    min-height: auto;
+    }
+    .detail p:nth-child(1){
+        margin: 10px 0px;
+    }
+}
+@media (max-width:700px){
+    .sidebar .product{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .sidebar .product a:nth-child(n+1){
+        margin: 10px 0;
+    }
+    .tab-content {
+        margin: 0;
+    }
+    .product-detail img{
+        height: 350px;
+    }
+}

@@ -1,0 +1,24 @@
+@media (min-width: 600px) {
+  .custom-header {
+    height: 86px;
+  }
+  .custom-header button {
+    font-family: STHeitiSC-Medium;
+    font-size: 18px;
+    color: #000000;
+  }
+}
+@media (max-width: 600px) {
+  .custom-header {
+    align-items: center;
+  }
+}
+.custom-list .justify-center,
+.custom-list .flex-center {
+  align-items: center;
+}
+.custom-list .q-item__label {
+  font-family: STHeitiSC-Medium;
+  font-size: 16px;
+  color: #000000;
+}
